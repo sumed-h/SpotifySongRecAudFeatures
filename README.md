@@ -8,8 +8,14 @@ I want to create a spotify playlist auto creator that would be able to take diff
 # Business Objective
 
 # Data
+Data came from 2 sources:
+ - API Calls of Spotify's [Web API](https://developer.spotify.com/documentation/web-api/) to get [audio features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
+ - [The Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) which contained 1000 separate files
+ filled with 1000 playlist each. I took a random sample of 10 files due to computational and time costs to use for my project.
 
 # Methods
+This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
+Similarity
 
 # Results
 
@@ -23,21 +29,23 @@ I want to create a spotify playlist auto creator that would be able to take diff
  - Because the final dataset I modeled on was only about 12000 songs which is a severe lack of representation from Spotify's 70 million song database.
   
 # Future Work
-- Maybe add genres to dataset along with the other current audio features to see if recommendations improve.
+- Maybe add genres to dataset along with the other current audio features to see if recommendations improve. Also find out if there is a way to included
+  more than one single artist and song to find similar songs.
+- Create an app through [Flask](https://flask.palletsprojects.com/en/2.0.x/) or [Streamlit](https://streamlit.io/) to better visualize the recommendation
+  systems.
+- Make a collaborative-filtered Recommendation System based on what other users listen to compared to my own streaming history
 
 # For More Information
 
-Please review the full analysis in my Jupyter Notebook or presentation deck.
+Please review the full analysis in my [Jupyter Notebook](./jan13.ipynb) or [presentation deck](/Capstone_Presentation.pdf).
 
-For additional questions, feel free to contact me.
+For additional questions, feel free to [contact me](https://www.linkedin.com/in/sumedh-bhardwaj-932767202/).
 
-# Repositiory Structure
-
-├── data                                <- Source data .csv files
-├── images                              <- Exported Notebook visualizations
-├── environment.yml                     <- Environment .yml file for reproducibility
-├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
-├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
+## Repositiory Structure
+```
+├── Data                                <- Both sourced externally and generated from code
+├── Images                              <- Both sourced externally and generated from code
+├── Notebooks                           <- Narrative documentation of analysis in Jupyter notebook
 ├── requirements.txt                    <- Requirements .txt file for reproducibility
-├── spotify_authorization.py            <- Spotify authorization function to call in Main Notebook
-└── project_presentation.pdf            <- PDF version of project presentation
+├── Capstone_presentation.pdf           <- PDF version of project presentation
+└── README.md                           <- The top-level README for reviewers of this project
