@@ -16,6 +16,24 @@ Data came from 2 sources:
  - API Calls of Spotify's [Web API](https://developer.spotify.com/documentation/web-api/) to get [audio features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
  - [The Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) which contained 1000 separate files
  filled with 1000 playlist each. I took a random sample of 10 files due to computational and time costs to use for my project.
+ 
+ ## Dataset Columns
+- Acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
+- Danceability measure describes how suitable a track is for dancing.
+- Duration_ms is the duration of the song track in milliseconds.
+- Energy represents a perceptual measure of intensity and activity.
+- Instrumentalness predicts whether a track contains vocals or not.
+- Loudness of a track in decibels(dB).
+- Liveness detects the presence of an audience in the recording.
+- Speechiness detects the presence of spoken words in a track
+- Time_signature is an estimated overall time signature of a track.
+- Key the track is in. Integers map to pitches using standard Pitch Class notation.
+- Valence(Vibe) measures from 0.0 to 1.0 describing the musical positiveness conveyed by a track.
+- Target value describes the encoded value of 0 and 1. 0 means listener has not saved the song and 1 means listener have saved the song.
+- Tempo is in beats per minute (BPM).
+- Mode indicates the modality(major or minor) of the song.
+- Track_name is the name of the song.
+- Artist_Name is the singer of the song.
 
 # Methods
 This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
