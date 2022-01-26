@@ -44,7 +44,7 @@ The final dataset 12,000 songs with the audio features. It makes sense that loud
 ![chart1](./Images/correlation2.jpg)
 
 # The Recommendations
-![chart2](./Images/models.png)
+![chart2](./Images/modelsupdated.png)
 
 # Modeling
 
