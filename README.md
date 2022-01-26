@@ -19,7 +19,7 @@ Similarity
 
 # Results
 The final dataset 12,000 songs with the audio features. It makes sense that loudness and energy are highly correlated and valence & danceability are the second highly correlated sound propertiees.
-![chart1]
+![chart1](./Images/correlation.jpg)
 
 # Modeling
 
