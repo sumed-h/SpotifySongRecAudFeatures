@@ -18,7 +18,7 @@ This project is only uses content-based filtering to create a recommendation sys
 Similarity
 
 # Results
-The final dataset 12,000 songs with the audio features. It comes as no surprise that the majority of songs within the dataset score high in both energy and danceability. Both features somewhat define electronic dance music.
+The final dataset 12,000 songs with the audio features. It makes sense that loudness and energy are highly correlated and valence & danceability are the second highly correlated sound properties.
 ![chart1](./Images/correlation.jpg)
 
 # Modeling
