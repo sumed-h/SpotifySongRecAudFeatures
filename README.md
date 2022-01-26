@@ -1,23 +1,13 @@
-# Spotify Song Recommendation System based on Artists
+# Spotify Song Recommendation System based on Audio Features
 
 # Background
 I have been an avid music listener my whole life which leads me to make tons of playlists on Spotify.
 Creating Playlists manually can be very time consuming and inefficient. I have always wondered if there was a way to make a playlist based on the mood of a song and unfortunately spotify doesnt have an option for that. So I wanted to create a recommendation system that can take an artist and various audio features such as tempo, valence(vibe), danceability of a song to create automatic playlists. I Am My own stakeholder but this can also be helpful to other enthusiasts like me out there.
 
 # Overview
+Give background as to why I chose Spotify, explain that they have huge database of 70 million songs. talk about their web api 
 
-# Business Objective
-Why Not Just Use Spotify Radio?
-They do not allow you to use the features of tracks. When you get a spotify radio seperate playlist, you do not necessarily like all the songs that they do. Maybe you do wanted more danceable songs then songs with tempo that was given. Using the playlist creation feature that I have made, you can decide which types of songs you want to based on that song corresponding to the artist you like.
-
-
-# Data
-Data came from 2 sources:
- - API Calls of Spotify's [Web API](https://developer.spotify.com/documentation/web-api/) to get [audio features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
- - [The Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) which contained 1000 separate files
- filled with 1000 playlist each. I took a random sample of 10 files due to computational and time costs to use for my project.
- 
- ## Dataset Columns
+## Dataset Columns
 - Acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
 - Danceability measure describes how suitable a track is for dancing.
 - Duration_ms is the duration of the song track in milliseconds.
@@ -35,6 +25,19 @@ Data came from 2 sources:
 - Track_name is the name of the song.
 - Artist_Name is the singer of the song.
 
+# Business Objective
+Why Not Just Use Spotify Radio?
+They do not allow you to use the features of tracks. When you get a spotify radio seperate playlist, you do not necessarily like all the songs that they do. Maybe you do wanted more danceable songs then songs with tempo that was given. Using the playlist creation feature that I have made, you can decide which types of songs you want to based on that song corresponding to the artist you like.
+
+
+# Data
+Data came from 2 sources:
+ - API Calls of Spotify's [Web API](https://developer.spotify.com/documentation/web-api/) to get [audio features](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features)
+ - [The Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) which contained 1000 separate files
+ filled with 1000 playlist each. I took a random sample of 10 files due to computational and time costs to use for my project.
+ 
+ 
+
 # Methods
 This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
 Similarity
@@ -47,8 +50,13 @@ The final dataset 12,000 songs with the audio features. It makes sense that loud
 ![chart2](./Images/modelsupdated.png)
 
 # Modeling
+Used Cosine Similarity, KNN Brute Force, KNN Ball Tree, & K-Means Clustering to get a list of recommendations based on four audio features; valence, loudness,
+danceability, and energy. expand
+![chart3](./Images/modelsusedrm.png)
 
 # Conclusion
+K Means Clustering model was the best. It had the lowest mean recommendation distance between selected features and it sounded the best according to
+my opinion. expand more
 
 # Limitations
  - Because the final dataset I modeled on was only about 12000 songs which is a severe lack of representation from Spotify's 70 million song database.
@@ -59,6 +67,8 @@ The final dataset 12,000 songs with the audio features. It makes sense that loud
 - Create an app through [Flask](https://flask.palletsprojects.com/en/2.0.x/) or [Streamlit](https://streamlit.io/) to better visualize the recommendation
   systems.
 - Make a collaborative-filtered Recommendation System based on what other users listen to compared to my own streaming history
+- Make this same type of recommendation system I made with Spotify API with the [Apple Music API](https://developer.apple.com/documentation/applemusicapi/) as
+  well.   
 
 # For More Information
 
