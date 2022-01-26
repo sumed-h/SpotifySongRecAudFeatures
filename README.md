@@ -1,11 +1,15 @@
 # Spotify Song Recommendation System based on Artists
 
 # Background
-I want to create a spotify playlist auto creator that would be able to take different artists based on your own music listening data while at the same time also adding a certain percentage of songs that you  like based on a recommendation system. Also if there would be a way to put a limit on the # of songs in a single playlist. Example, English Hip-Hop & Indian Music playlist  with 100 songs(including new recs).  Bc as of rn, everyone has to manually add music or create an auto playlist thats only similar to a specific datapoint such as (song name, artist, genre, album, etc) so if there way a way to make it seamless and easier to make a collection of the top say 50 hits for 2 genre/language(s) or more, I think it would be helpful to a lot.
+I have been an avid music listener my whole life which leads me to make tons of playlists on Spotify.
+Creating Playlists manually can be very time consuming and inefficient. I have always wondered if there was a way to make a playlist based on the mood of a song and unfortunately spotify doesnt have an option for that. So I wanted to create a recommendation system that can take an artist and various audio features such as tempo, valence(vibe), danceability of a song to create automatic playlists. I Am My own stakeholder but this can also be helpful to other enthusiasts like me out there.
 
 # Overview
 
 # Business Objective
+Why Not Just Use Spotify Radio?
+They do not allow you to use the features of tracks. When you get a spotify radio seperate playlist, you do not necessarily like all the songs that they do. Maybe you do wanted more danceable songs then songs with tempo that was given. Using the playlist creation feature that I have made, you can decide which types of songs you want to based on that song corresponding to the artist you like.
+
 
 # Data
 Data came from 2 sources:
