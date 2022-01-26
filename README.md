@@ -46,13 +46,13 @@ Similarity
 The final dataset 12,000 songs with the audio features. It makes sense that loudness(dB) and energy are highly correlated and vibe & danceability are the second highly correlated sound propertiees.
 ![chart1](./Images/correlation2.jpg)
 
-# The Recommendations
-![chart2](./Images/modelsupdated.png)
-
 # Modeling
 Used Cosine Similarity, KNN Brute Force, KNN Ball Tree, & K-Means Clustering to get a list of recommendations based on four audio features; valence, loudness,
 danceability, and energy. expand
 ![chart3](./Images/modelsusedrm.png)
+
+# The Recommendations
+![chart2](./Images/modelsupdated.png)
 
 # Conclusion
 K Means Clustering model was the best. It had the lowest mean recommendation distance between selected features and it sounded the best according to
