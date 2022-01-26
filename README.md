@@ -14,10 +14,12 @@ Data came from 2 sources:
  filled with 1000 playlist each. I took a random sample of 10 files due to computational and time costs to use for my project.
 
 # Methods
-This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
+This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
 Similarity
 
 # Results
+The final dataset 12,000 songs with the audio features. It comes as no surprise that the majority of songs within the dataset score high in both energy and danceability. Both features somewhat define electronic dance music.
+![chart1](./Images/correlation.jpg)
 
 # Modeling
 
