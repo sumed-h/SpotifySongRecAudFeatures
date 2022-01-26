@@ -32,6 +32,7 @@ Please review the full analysis in my Jupyter Notebook or presentation deck.
 For additional questions, feel free to contact me.
 
 # Repositiory Structure
+
 ├── data                                <- Source data .csv files
 ├── images                              <- Exported Notebook visualizations
 ├── environment.yml                     <- Environment .yml file for reproducibility
