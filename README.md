@@ -21,10 +21,10 @@ Similarity
 The final dataset 12,000 songs with the audio features. It makes sense that loudness(dB) and energy are highly correlated and vibe & danceability are the second highly correlated sound propertiees.
 ![chart1](./Images/correlation2.jpg)
 
-# Modeling
-
 # The Recommendations
 ![chart2](./Images/models.png)
+
+# Modeling
 
 # Conclusion
 
