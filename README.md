@@ -34,7 +34,7 @@ Data came from 2 sources:
  
 
 # Methods & Modeling
-This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and Ball Tree, and Cosine-Similarity to get a list of recommendations based on four audio features; valence, loudness,
+This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using Nearest Neighbors (NN) including Brute force & Ball Tree, KNN Clustering and Cosine-Similarity to get a list of recommendations based on four audio features; valence, loudness,
 danceability, and energy.
 ![chart3](./Images/4models.png)
 
