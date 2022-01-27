@@ -49,7 +49,7 @@ danceability, and energy. expand The final dataset 12,000 songs with the audio f
 ![chart3](./Images/4models.png)
 
 # The Recommendations (Results)
-![chart2](./Images/modelsupdated.png)
+![chart2](./Images/updatednamemodel.png)
 - I modeled each model off the same song of "Magnolia" by Playboi Carti.
 -Cosine Similarity & KNN Clustering recommendation lists sounded very similar to each other when I listened to them. Both nearest neighbor models were 
 essentially similar to each other in terms of the names of tracks but when I listened to them they seemed completely out of sorts to each other. The mean distances between the features for both NN models were also extremely high (both over 1450 distance points) while KNN clustering was only 0.07 distance points.
