@@ -1,12 +1,9 @@
 ![header](./Images/usespotify.png)
 # Spotify Song Recommendation System based on Audio Features
 
-# Background
+# Background / Overview
 I have been an avid music listener my whole life which leads me to make tons of playlists on Spotify.
-Creating Playlists manually can be very time consuming and inefficient. I have always wondered if there was a way to make a playlist based on the mood of a song and unfortunately spotify doesnt have an option for that. So I wanted to create a recommendation system that can take an artist and various audio features such as tempo, valence(vibe), danceability of a song to create automatic playlists. I Am My own stakeholder but this can also be helpful to other enthusiasts like me out there.
-
-# Overview
-Give background as to why I chose Spotify, explain that they have huge database of 70 million songs. talk about their web api 
+Creating Playlists manually can be very time consuming and inefficient. I have always wondered if there was a way to make a playlist based on the mood of a song and unfortunately spotify doesnt have an option for that. So I wanted to create a recommendation system that can take an artist and various audio features such as tempo, valence(vibe), danceability of a song to create automatic playlists. I Am My own stakeholder but this can also be helpful to other enthusiasts like me out there. Give background as to why I chose Spotify, explain that they have huge database of 70 million songs. talk about their web api.
 
 ## Dataset Columns
 - acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
