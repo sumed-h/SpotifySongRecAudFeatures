@@ -67,7 +67,7 @@ KNN Clustering model was the best based on my subjective hearing analysis. It ha
 
 # For More Information
 
-Please review the full analysis in my [Jupyter Notebook](./jan13.ipynb) or [presentation deck](/Capstone_Presentation.pdf).
+Please review the full analysis in my [Jupyter Notebook](./FinalNotebook.ipynb) or [presentation deck](/Capstone_Presentation.pdf).
 
 For additional questions, feel free to [contact me](https://www.linkedin.com/in/sumedh-bhardwaj-932767202/).
 
