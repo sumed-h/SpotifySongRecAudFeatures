@@ -76,6 +76,6 @@ For additional questions, feel free to [contact me](https://www.linkedin.com/in/
 ├── Data                                <- Both sourced externally and generated from code
 ├── Images                              <- Both sourced externally and generated from code
 ├── Notebooks                           <- Narrative documentation of analysis in Jupyter notebook
-├── requirements.txt                    <- Requirements .txt file for reproducibility
+├── FinalNotebook.ipynb                 <- Final Jupyter Notebook for analysis
 ├── Capstone_presentation.pdf           <- PDF version of project presentation
 └── README.md                           <- The top-level README for reviewers of this project
