@@ -76,7 +76,7 @@ Please review the full analysis in my [Jupyter Notebook](./jan13.ipynb) or [pres
 
 For additional questions, feel free to [contact me](https://www.linkedin.com/in/sumedh-bhardwaj-932767202/).
 
-## Repositiory Structure
+## Repository Structure
 ```
 ├── Data                                <- Both sourced externally and generated from code
 ├── Images                              <- Both sourced externally and generated from code
