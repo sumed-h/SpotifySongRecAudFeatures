@@ -1,3 +1,4 @@
+![header](./Images/usespotify.png)
 # Spotify Song Recommendation System based on Audio Features
 
 # Background
@@ -8,22 +9,21 @@ Creating Playlists manually can be very time consuming and inefficient. I have a
 Give background as to why I chose Spotify, explain that they have huge database of 70 million songs. talk about their web api 
 
 ## Dataset Columns
-- Acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
-- Danceability measure describes how suitable a track is for dancing.
-- Duration_ms is the duration of the song track in milliseconds.
-- Energy represents a perceptual measure of intensity and activity.
-- Instrumentalness predicts whether a track contains vocals or not.
-- Loudness of a track in decibels(dB).
-- Liveness detects the presence of an audience in the recording.
-- Speechiness detects the presence of spoken words in a track
-- Time_signature is an estimated overall time signature of a track.
-- Key the track is in. Integers map to pitches using standard Pitch Class notation.
-- Valence(Vibe) measures from 0.0 to 1.0 describing the musical positiveness conveyed by a track.
-- Target value describes the encoded value of 0 and 1. 0 means listener has not saved the song and 1 means listener have saved the song.
-- Tempo is in beats per minute (BPM).
-- Mode indicates the modality(major or minor) of the song.
-- Track_name is the name of the song.
-- Artist_Name is the singer of the song.
+- acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
+- danceability measure describes how suitable a track is for dancing.
+- duration_ms is the duration of the song track in milliseconds.
+- energy represents a perceptual measure of intensity and activity.
+- instrumentalness predicts whether a track contains vocals or not.
+- loudness of a track in decibels(dB).
+- liveness detects the presence of an audience in the recording.
+- speechiness detects the presence of spoken words in a track
+- time_signature is an estimated overall time signature of a track.
+- key the track is in. Integers map to pitches using standard Pitch Class notation.
+- valence (Vibe) measures from 0.0 to 1.0 describing the musical positiveness conveyed by a track.
+- tempo is in beats per minute (BPM).
+- mode (Melody) indicates the modality(major or minor) of the song.
+- track_name is the name of the song.
+- artist_Name is the singer of the song.
 
 # Business Objective
 Why Not Just Use Spotify Radio?
@@ -39,7 +39,7 @@ Data came from 2 sources:
  
 
 # Methods
-This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and KD Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
+This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and Ball Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
 Similarity
 
 # Results
@@ -49,7 +49,7 @@ The final dataset 12,000 songs with the audio features. It makes sense that loud
 # Modeling
 Used Cosine Similarity, KNN Brute Force, KNN Ball Tree, & K-Means Clustering to get a list of recommendations based on four audio features; valence, loudness,
 danceability, and energy. expand
-![chart3](./Images/modelsusedrm.png)
+![chart3](./Images/4models.png)
 
 # The Recommendations
 ![chart2](./Images/modelsupdated.png)
@@ -69,6 +69,11 @@ my opinion. expand more
 - Make a collaborative-filtered Recommendation System based on what other users listen to compared to my own streaming history
 - Make this same type of recommendation system I made with Spotify API with the [Apple Music API](https://developer.apple.com/documentation/applemusicapi/) as
   well.   
+  
+# Sources
+- [How Spotify Recommends Your New Favorite Artist](https://towardsdatascience.com/how-spotify-recommends-your-new-favorite-artist-8c1850512af0)
+- [Content-Based Recommendation System](https://medium.com/@bindhubalu/content-based-recommender-system-4db1b3de03e7)
+- [Building a Song Recommendation System using Cosine Similarity and Euclidian Distance](https://medium.com/@mark.rethana/building-a-song-recommendation-system-using-cosine-similarity-and-euclidian-distance-748fdfc832fd)
 
 # For More Information
 
