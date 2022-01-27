@@ -56,7 +56,7 @@ essentially similar to each other in terms of the names of tracks but when I lis
 
 # Conclusion
 KNN Clustering model was the best based on my subjective hearing analysis. It had the lowest mean recommendation distance between selected features and it sounded the best. This model was also used on two other songs "(For The Love (Autograf Remix)" by GriZ and "PA Nights" by Mac Miller and both recommended lists sounded similar as well as their average distance between features (0.07 distance points) was identical with "Magnolia." 
-![chart5](./Image/finalcluster.png)
+![chart5](./Images/finalcluster.png)
 
 # Limitations
  - Because the final dataset I modeled on was only about 12000 songs which is a severe lack of representation from Spotify's 70 million song database.
