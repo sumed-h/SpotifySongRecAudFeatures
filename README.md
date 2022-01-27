@@ -42,21 +42,21 @@ Data came from 2 sources:
 This project is only uses content-based filtering to create a recommendation system. Audio feature similarity is created using K-Nearest Neighbors(KNN) including Brute force, Clustering and Ball Tree, and Cosine-Similarity. Exploratory Data Analaysis was based on the sampled, final cleaned dataset.
 Similarity
 
-# Results
-The final dataset 12,000 songs with the audio features. It makes sense that loudness(dB) and energy are highly correlated and vibe & danceability are the second highly correlated sound propertiees.
-![chart1](./Images/correlation2.jpg)
 
 # Modeling
 Used Cosine Similarity, KNN Brute Force, KNN Ball Tree, & K-Means Clustering to get a list of recommendations based on four audio features; valence, loudness,
-danceability, and energy. expand
+danceability, and energy. expand The final dataset 12,000 songs with the audio features. It makes sense that loudness(dB) and energy are highly correlated and vibe & danceability are the second highly correlated sound propertiees. Clean up
 ![chart3](./Images/4models.png)
 
-# The Recommendations
+# The Recommendations (Results)
 ![chart2](./Images/modelsupdated.png)
+- I modeled each model off the same song of "Magnolia" by Playboi Carti.
+-Cosine Similarity & KNN Clustering recommendation lists sounded very similar to each other when I listened to them. Both nearest neighbor models were 
+essentially similar to each other in terms of the names of tracks but when I listened to them they seemed completely out of sorts to each other. The mean distances between the features for both NN models were also extremely high (both over 1450 distance points) while KNN clustering was only 0.07 distance points.
 
 # Conclusion
-K Means Clustering model was the best. It had the lowest mean recommendation distance between selected features and it sounded the best according to
-my opinion. expand more
+KNN Clustering model was the best based on my subjective hearing analysis. It had the lowest mean recommendation distance between selected features and it sounded the best. This model was also used on two other songs "(For The Love (Autograf Remix)" by GriZ and "PA Nights" by Mac Miller and both recommended lists sounded similar as well as their average distance between features (0.07 distance points) was identical with "Magnolia." 
+![chart5](./Image/finalcluster.png)
 
 # Limitations
  - Because the final dataset I modeled on was only about 12000 songs which is a severe lack of representation from Spotify's 70 million song database.
