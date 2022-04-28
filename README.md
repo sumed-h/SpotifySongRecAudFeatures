@@ -23,7 +23,7 @@ Creating playlists manually can be very time consuming and inefficient. I have a
 - artist_Name is the singer of the song.
 
 # Business Objective (Why Not Just Use Spotify Radio?)
-Spotify Radios' are great but they do not allow you to select the specific audio features of tracks to come up with recommendations. When you make a spotify radio playlist, you may not necessarily like all the songs that they give. Maybe you wanted more danceable songs than songs with tempo that was given. Using the song recommendation feature that I have made, you can decide how the song sounds based on that song corresponding to the artist you want to listen to.
+Spotify Radios' are great but they do not allow you to select the specific audio features of tracks to come up with recommendations. When you make a Spotify radio playlist, you may not necessarily like all the songs that they give. Maybe you wanted more danceable songs than songs with tempo that was given. Using the song recommendation feature that I have made, you can decide how the song sounds based on that song corresponding to the artist you want to listen to.
 
 
 # Data
